@@ -97,9 +97,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border-radius: 4px;
 	}
 
+	button:hover{
+		border: solid 1px #00002e;
+		background-color: #fff;
+		color: #00002e;
+	}
 
 	.pg-home ul li img{
 		width: 190px;
+		border: solid 2px transparent;
 	}
 
 	.pg-home ul li img:hover{
