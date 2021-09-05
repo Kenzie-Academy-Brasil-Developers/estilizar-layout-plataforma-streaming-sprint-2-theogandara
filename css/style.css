@@ -18,19 +18,22 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 :root{
   --corFundo:#00002e;
   --corTexto:#fff;
+  --font:'Helvetica Neue',Helvetica,Arial,sans-serif;
 
 }
 
 /*BODY*/
 	body{
-		margin: 0;
-		padding: 0;
-		box-sizing: 0;
 
 		background-color: var(--corFundo);
 		color: var(--corTexto);
-		font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-family: var(--font)
 
+		display: flex;
+		flex-direction: column;
+		
+		align-items: center;
+		justify-content: center;
 
 	}
 
@@ -44,47 +47,50 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
 	}
 	
 
-	div.pg-home ul {
-
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		text-align: center;
-
-		padding: 0;
-		
-	}
-
+	
 	div.pg-home header{
-		margin: 0px;
+		margin-bottom: 25px;
+		font-size: 1.8rem;
+		font-family: var(--font);
+		font-weight: 600;
 	}
-
-
-	section{
+	
+	figure figcaption{
+		display: none;
+	}
+	
+	div.pg-home ul {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
-		align-content: center;
-
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
 	}
+	
 	
 	.pg-home ul li{
 		display: flex;
 		flex-direction: column;
 		list-style: none;
-		width: 100%;
-		
-		
-	}
+		cursor: pointer;
 
-	figure figcaption{
-		display: none;
+		font-family: var(--font);
+		width: 186px;
+	}
+	
+	section{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
 	}
 
 	button{
@@ -95,6 +101,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: solid 1px white;
 		max-width: 300px;
 		border-radius: 4px;
+		margin: 20px;
+		
+		font-family: var(--font)
 	}
 
 	button:hover{
@@ -104,7 +113,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home ul li img{
-		width: 190px;
+		width: 170px;
 		border: solid 2px transparent;
 	}
 
@@ -116,9 +125,23 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 		div.pg-home ul {
 			flex-direction: row;
+
+			flex-wrap: wrap;
+
+			justify-content: space-around;
+
+			width: 858px;
 		}
 
-		h2{
-			font-size: 5rem;
+
+		.pg-home ul li{
+
+			display:flex;
+			flex-direction: column;
+			list-style: none;
+
+			align-items: center;
 		}
+
+
 	}
