@@ -50,7 +50,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	
 	div.pg-home header{
 		margin-bottom: 25px;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		font-family: var(--font);
 		font-weight: 600;
 	}
@@ -149,5 +149,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			align-items: center;
 		}
 
+		div.pg-home header{
+			font-size: 3rem;
+		}
+		
 
 	}
